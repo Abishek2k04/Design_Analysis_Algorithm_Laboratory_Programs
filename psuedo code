@@ -17,24 +17,24 @@ function main():
 main()
 
 #############################################ALGORITHM##################################################################
-Here's a step-by-step algorithm for the program that uses the Floyd-Warshall algorithm to compute the shortest paths between all pairs of vertices in a graph:
+Sure, here's a non-technical algorithm for the provided program:
 
 1. **Start**
-2. **Define `floydWarshall(graph, n)` function**:
-   a. Iterate over each intermediate vertex `k` from 0 to `n-1`.
-   b. For each pair of vertices `i` and `j`:
-      i. Check if the current distance `graph[i][j]` is greater than the sum of distances from `i` to `k` and from `k` to `j`.
-      ii. If so, update `graph[i][j]` to the sum of distances from `i` to `k` and from `k` to `j`.
-3. **Define `main()` function**:
-   a. Declare variables `n`, `i`, `j`.
-   b. Prompt the user to input the number of vertices `n`.
-   c. Dynamically allocate memory for a 2D array `graph` of size `n x n`.
-   d. Initialize `graph` such that diagonal elements are 0 and other elements are set to 100 (representing infinity).
-   e. Prompt the user to input the edges of the graph and update the `graph` array accordingly.
-   f. Display "The original graph is:" followed by the elements of the `graph` array.
-   g. Call `floydWarshall(graph, n)` function to compute shortest paths.
-   h. Display "The shortest path matrix is:" followed by the elements of the updated `graph` array.
-4. **End**
+2. **Input the number of vertices**:
+   - Ask the user to enter the number of vertices in the graph.
+3. **Allocate memory for the graph**:
+   - Create a space in the computer's memory to store the graph.
+4. **Initialize the graph**:
+   - Set up the initial distances between vertices.
+   - For each pair of vertices, set the distance to 0 if it's the same vertex (diagonal), and set it to a high value (100) otherwise.
+5. **Input the edges**:
+   - Ask the user to input the weights of edges between vertices.
+6. **Display the original graph**:
+   - Show the user the initial state of the graph.
+7. **Compute the shortest paths**:
+   - Use the Floyd-Warshall algorithm to find the shortest paths between all pairs of vertices.
+8. **Display the shortest path matrix**:
+   - Show the user the shortest distances between all pairs of vertices.
+9. **End**
 
-This step-by-step algorithm outlines the process of implementing the Floyd-Warshall algorithm to compute the shortest paths between all pairs of vertices in a graph, as well as the necessary input and output steps in the main function.
-
+This algorithm outlines the steps of the program in a simple, non-technical manner, focusing on the user's perspective and the high-level actions taken by the program.
