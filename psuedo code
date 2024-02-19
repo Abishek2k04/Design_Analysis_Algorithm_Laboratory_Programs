@@ -1,0 +1,19 @@
+function floydWarshall(graph, n):
+    for k from 0 to n-1:
+        for i from 0 to n-1:
+            for j from 0 to n-1:
+                graph[i][j] = min(graph[i][j], graph[i][k] + graph[k][j])
+
+function main():
+    Input the number of vertices n
+    Create a 2D array graph[n][n]
+    Initialize graph[][] with large values (100) for all edges, and 0 for diagonal elements
+    Accept input for the weights of edges between vertices from the user
+    
+    Call floydWarshall(graph, n)
+    
+    Output the shortest path matrix
+
+main()
+
+
